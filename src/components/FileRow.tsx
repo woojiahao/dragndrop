@@ -18,15 +18,15 @@ export function FileRow({
 
   return (
     <div
-      className={checked ? 'checked-file' : ''}
+      className={`file-row ${checked ? 'checked-file' : ''}`}
       draggable={checked}
+      onClick={onSelect}
       onDragStart={onDragStart}
     >
       <input
         type="checkbox"
         value={file.fileName}
         checked={checked}
-        onChange={onSelect}
       />
       <label>
         {' '}

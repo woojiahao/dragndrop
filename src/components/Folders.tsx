@@ -13,7 +13,7 @@ export function Folders({
       <p>
         <strong>Folders</strong>
       </p>
-      <div>
+      <div className="folder-explorer">
         {folders.map((folder) => (
           <FolderRow folder={folder} onRelease={onRelease} />
         ))}

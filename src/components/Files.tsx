@@ -19,11 +19,11 @@ export function Files({
   )
 
   return (
-    <div>
+    <div className="files">
       <p>
         <strong>Files</strong>
       </p>
-      <div>
+      <div className="file-explorer">
         {files.map((file) => (
           <FileRow
             file={file}

@@ -1,5 +1,6 @@
-import { useState, useCallback } from 'react'
-import type { Folder } from '../models/folder'
+import { useState, useCallback } from 'react';
+import type { Folder } from '../models/folder';
+import { FaFolder, FaFolderOpen } from "react-icons/fa";
 
 export function FolderRow({
   folder,
@@ -31,12 +32,13 @@ export function FolderRow({
 
   return (
     <div
+      className={`folder-row ${isFolderHover ? "folder-hover" : ''}`}
       onDragEnter={dragEnterHandler}
       onDragLeave={dragLeaveHandler}
       onDragOver={(event) => event.preventDefault()}
       onDrop={dropHandler}
     >
-      [{isFolderHover ? 'X' : ' '}] {folder.folderName}
+      {isFolderHover ? <FaFolderOpen /> : <FaFolder />} {folder.folderName}
     </div>
   )
 }

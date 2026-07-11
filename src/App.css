@@ -4,6 +4,24 @@
   gap: 4em;
 }
 
+.file-explorer,
+.folder-explorer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.file-row,
+.folder-row {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
 .checked-file {
+  background-color: gainsboro;
+}
+
+.folder-hover {
   background-color: gainsboro;
 }
