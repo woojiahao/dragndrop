@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.checked-file {
+  background-color: gainsboro;
+}
